@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Information Extraction System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Information Extraction System</h1>
+        <p>Extract useful information from text using NLP</p>
+    </header>
+
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Input Section -->
+        <section class="input-section">
+
+            <h2>Enter Text</h2>
+
+            <textarea
+                id="inputText"
+                placeholder="Enter or paste your text here...">
+            </textarea>
+
+            <div class="buttons">
+
+                <button onclick="extractInformation()">
+                    Extract Information
+                </button>
+
+                <button class="clear-button" onclick="clearText()">
+                    Clear
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Result Section -->
+        <section class="result-section">
+
+            <h2>Extracted Information</h2>
+
+            <div class="result-grid">
+
+                <!-- Name -->
+                <div class="result-card">
+                    <span class="icon">👤</span>
+                    <h3>Name</h3>
+                    <p id="nameResult">Not detected</p>
+                </div>
+
+
+                <!-- Email -->
+                <div class="result-card">
+                    <span class="icon">📧</span>
+                    <h3>Email</h3>
+                    <p id="emailResult">Not detected</p>
+                </div>
+
+
+                <!-- Phone -->
+                <div class="result-card">
+                    <span class="icon">📞</span>
+                    <h3>Phone Number</h3>
+                    <p id="phoneResult">Not detected</p>
+                </div>
+
+
+                <!-- Date -->
+                <div class="result-card">
+                    <span class="icon">📅</span>
+                    <h3>Date</h3>
+                    <p id="dateResult">Not detected</p>
+                </div>
+
+
+                <!-- URL -->
+                <div class="result-card">
+                    <span class="icon">🔗</span>
+                    <h3>URL</h3>
+                    <p id="urlResult">Not detected</p>
+                </div>
+
+
+                <!-- Numbers -->
+                <div class="result-card">
+                    <span class="icon">🔢</span>
+                    <h3>Numbers</h3>
+                    <p id="numberResult">Not detected</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
